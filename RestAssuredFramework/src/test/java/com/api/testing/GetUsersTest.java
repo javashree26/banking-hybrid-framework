@@ -8,18 +8,21 @@ import com.api.base.BaseTest;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class SampleGetTest extends BaseTest {
+public class GetUsersTest extends BaseTest {
 
 	@Test
 	public void getUserList() {
 
+		int statusCode;
 		// hitting the GET endpoint
 		Response response = RestAssured.given().when().get("/api/users?page=2").then().extract().response();
 
 		// printing response
 		System.out.println("Response body:\n" + response.getBody().asPrettyString());
 
-		Assert.assertEquals(response.getStatusCode(), 200, "Expected 200 OK");
+		statusCode = response.getStatusCode();
+
+		Assert.assertEquals(statusCode, 200, "Expected 200 OK");
 		Assert.assertTrue(response.getBody().asString().contains("email"), "Response should contain email field");
 
 	}

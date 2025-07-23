@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite" parallel="false">
+	<test name="Put endpoint test">
+		<groups>
+			<run>
+				<include name="putmethod" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.api.testing.UpdateUserTest" />
+		</classes>
+	</test>
+</suite>

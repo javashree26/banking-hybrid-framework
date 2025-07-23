@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-22T18:30:25 IST" name="Default suite" finished-at="2025-07-22T18:30:29 IST" duration-ms="3879">
+  <suite started-at="2025-07-23T18:33:05 IST" name="Default suite" finished-at="2025-07-23T18:33:11 IST" duration-ms="5760">
     <groups>
+      <group name="putmethod">
+        <method signature="UpdateUserTest.getUserId()[pri:1, instance:com.api.testing.UpdateUserTest@71def8f8]" name="getUserId" class="com.api.testing.UpdateUserTest"/>
+        <method signature="UpdateUserTest.updateUserId()[pri:2, instance:com.api.testing.UpdateUserTest@71def8f8]" name="updateUserId" class="com.api.testing.UpdateUserTest"/>
+      </group> <!-- putmethod -->
     </groups>
-    <test started-at="2025-07-22T18:30:25 IST" name="Default test" finished-at="2025-07-22T18:30:29 IST" duration-ms="3879">
-      <class name="com.api.testing.PostUserTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.testing.PostUserTest@156b88f5]" started-at="2025-07-22T18:30:25 IST" name="setup" finished-at="2025-07-22T18:30:26 IST" duration-ms="438" status="PASS">
+    <test started-at="2025-07-23T18:33:05 IST" name="Default test" finished-at="2025-07-23T18:33:11 IST" duration-ms="5760">
+      <class name="com.api.testing.UpdateUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.testing.UpdateUserTest@71def8f8]" started-at="2025-07-23T18:33:05 IST" name="setup" finished-at="2025-07-23T18:33:06 IST" duration-ms="811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCreateUser()[pri:0, instance:com.api.testing.PostUserTest@156b88f5]" started-at="2025-07-22T18:30:26 IST" name="testCreateUser" finished-at="2025-07-22T18:30:29 IST" duration-ms="3409" status="PASS">
+        <test-method signature="getUserId()[pri:1, instance:com.api.testing.UpdateUserTest@71def8f8]" started-at="2025-07-23T18:33:06 IST" name="getUserId" finished-at="2025-07-23T18:33:10 IST" duration-ms="3675" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateUser -->
-      </class> <!-- com.api.testing.PostUserTest -->
+        </test-method> <!-- getUserId -->
+        <test-method signature="updateUserId()[pri:2, instance:com.api.testing.UpdateUserTest@71def8f8]" started-at="2025-07-23T18:33:10 IST" name="updateUserId" finished-at="2025-07-23T18:33:11 IST" depends-on-methods="com.api.testing.UpdateUserTest.getUserId" duration-ms="1201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserId -->
+      </class> <!-- com.api.testing.UpdateUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

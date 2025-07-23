@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.api.base.BaseTest;
-import com.api.endpoints.CreateUserEndpoint;
+import com.api.endpoints.RequestFactory;
 import com.api.payloads.UserPayload;
 import com.api.utils.UserDataProvider;
 
@@ -26,7 +26,8 @@ public class PostUserTest extends BaseTest {
 		UserPayload payload = new UserPayload(name, job);
 
 		// Send POST request and capture response
-		Response response = CreateUserEndpoint.createUser(payload);
+		Response response = RequestFactory.getRequestSpec().body(payload).when().post("/api/users").then()
+				.statusCode(201).extract().response();
 
 		// Log full response (optional but useful during debug)
 		System.out.println("Response:\n" + response.asPrettyString());

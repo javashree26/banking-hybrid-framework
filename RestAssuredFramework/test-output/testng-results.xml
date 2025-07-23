@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-19T16:19:35 IST" name="Default suite" finished-at="2025-07-19T16:19:37 IST" duration-ms="2495">
+  <suite started-at="2025-07-22T18:30:25 IST" name="Default suite" finished-at="2025-07-22T18:30:29 IST" duration-ms="3879">
     <groups>
     </groups>
-    <test started-at="2025-07-19T16:19:35 IST" name="Default test" finished-at="2025-07-19T16:19:37 IST" duration-ms="2495">
-      <class name="com.api.testing.GetUsersTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.testing.GetUsersTest@156b88f5]" started-at="2025-07-19T16:19:35 IST" name="setup" finished-at="2025-07-19T16:19:35 IST" duration-ms="461" status="PASS">
+    <test started-at="2025-07-22T18:30:25 IST" name="Default test" finished-at="2025-07-22T18:30:29 IST" duration-ms="3879">
+      <class name="com.api.testing.PostUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.testing.PostUserTest@156b88f5]" started-at="2025-07-22T18:30:25 IST" name="setup" finished-at="2025-07-22T18:30:26 IST" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getUserList()[pri:0, instance:com.api.testing.GetUsersTest@156b88f5]" started-at="2025-07-19T16:19:35 IST" name="getUserList" finished-at="2025-07-19T16:19:37 IST" duration-ms="1995" status="PASS">
+        <test-method signature="testCreateUser()[pri:0, instance:com.api.testing.PostUserTest@156b88f5]" started-at="2025-07-22T18:30:26 IST" name="testCreateUser" finished-at="2025-07-22T18:30:29 IST" duration-ms="3409" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUserList -->
-      </class> <!-- com.api.testing.GetUsersTest -->
+        </test-method> <!-- testCreateUser -->
+      </class> <!-- com.api.testing.PostUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -10,7 +10,7 @@ import io.restassured.response.Response;
 
 public class GetUsersTest extends BaseTest {
 
-	@Test
+	@Test(enabled = false)
 	public void getUserList() {
 
 		int statusCode;

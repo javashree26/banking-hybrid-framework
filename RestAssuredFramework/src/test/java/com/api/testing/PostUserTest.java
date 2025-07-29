@@ -16,7 +16,8 @@ import io.restassured.response.Response;
 
 /**
  * @author dhanashree
- *
+ * Using data provider to create new data for POST
+ *Assertions: response status, name, job, userId and created timestamp validated
  */
 public class PostUserTest extends BaseTest {
 

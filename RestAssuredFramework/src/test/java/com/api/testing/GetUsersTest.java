@@ -9,6 +9,12 @@ import com.api.utils.ApiConstants;
 
 import io.restassured.response.Response;
 
+/**
+ * @author Dhanashree
+ * GET call to get list of all users
+ * Assertions: response status code and email validated
+ **/
+
 public class GetUsersTest extends BaseTest {
 
 	@Test(enabled = false)

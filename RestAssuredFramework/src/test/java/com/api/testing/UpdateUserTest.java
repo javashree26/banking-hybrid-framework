@@ -15,7 +15,11 @@ import io.restassured.response.Response;
 
 /**
  * @author dhanashree
- *
+ *PUT method tested 
+ *1) getting a userID with GET
+ *2) using the same userID to modify details in PUT 
+ *Assertions: response status and updated fields validated
+ *Priority and grouping of tests demonstrated  
  */
 public class UpdateUserTest extends BaseTest {
 	String userID;
